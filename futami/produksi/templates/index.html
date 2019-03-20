@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ title }} </title>
+</head>
+<body>
+	<h2> list smua produksi </h2>
+{% for a in release %}
+<a href="{{ a.produksi_id }}"> {{ a.produksi_id }}-{{ a.nomor_batch }}-{{ a.jumlah_dus }}-{{ a.jumlah_dus }}-{{ a.status }}-{{ a.rak }}-{{ a.lantai }}-{{ a.baris }}</a><br>
+{% endfor%}
+</body>
+</html>
